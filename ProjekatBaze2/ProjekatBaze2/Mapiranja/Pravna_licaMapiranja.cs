@@ -10,6 +10,7 @@ namespace ProjekatBaze2.Mapiranja
     {
         public Pravna_licaMapiranja()
         {
+            //Mapiranja
             Table("PRAVNA_LICA");
 
             KeyColumn("JEDIDENTFBROJ");
