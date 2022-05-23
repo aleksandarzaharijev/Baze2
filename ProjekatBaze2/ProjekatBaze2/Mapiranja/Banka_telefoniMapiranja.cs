@@ -10,11 +10,13 @@ namespace ProjekatBaze2.Mapiranja
     {
         public Banka_telefoniMapiranja()
         {
+            //Mapiranja
             Table("BANKA_TELEFONI");
 
             Id(x => x.Id, "IDBANKATELEFONI").GeneratedBy.TriggerIdentity();
 
             Map(x => x.Broj_Telefona, "BROJTELEFONA");
+            //dodat je neki komentar
 
 
         }
