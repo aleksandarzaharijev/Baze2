@@ -15,10 +15,7 @@ namespace ProjekatBaze2
         public string Ime;
         public string Email;
 
-        public BankaPregled()
-        {
-
-        }
+        public BankaPregled() {}
 
         public BankaPregled(int id, string adresaCentrale, string webAdresa, string ime, string email)
         {

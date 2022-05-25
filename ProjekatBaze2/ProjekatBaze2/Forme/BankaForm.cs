@@ -50,11 +50,23 @@ namespace ProjekatBaze2.Forme
             }
 
             int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
-            BankaBasic b = DTOManager.vratiBanku(idBanke);
-
-            IzmeniBankuForm forma = new IzmeniBankuForm(b);
+            BankaBasic banka = DTOManager.vratiBanku(idBanke);
+            IzmeniBankuForm forma = new IzmeniBankuForm(banka);
             forma.ShowDialog();
             this.popuniTabelu();
+        }
+
+        private void btnBankaTelefoni_Click(object sender, EventArgs e)
+        {
+            if(listaBanke.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Izaberite banku cije podatke zelite da promenite!");
+                return;
+            }
+            int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
+            BankaBasic banka = DTOManager.vratiBanku(idBanke);
+            BankaTelefoniForm forma = new BankaTelefoniForm(banka);
+            forma.ShowDialog();
         }
     }
 }

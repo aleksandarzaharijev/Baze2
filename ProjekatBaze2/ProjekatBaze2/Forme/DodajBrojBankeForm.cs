@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjekatBaze2.Forme
 {
-    public partial class DodajBankaTelefonForm : Form
+    public partial class DodajBrojBankeForm : Form
     {
-        public DodajBankaTelefonForm()
+        public DodajBrojBankeForm()
         {
             InitializeComponent();
-        }
-
-        private void DodajBankaTelefonForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

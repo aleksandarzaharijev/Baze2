@@ -155,6 +155,12 @@
     <Compile Include="Forme\DodajBankuForm.Designer.cs">
       <DependentUpon>DodajBankuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajBrojBankeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajBrojBankeForm.Designer.cs">
+      <DependentUpon>DodajBrojBankeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\IzmeniBankuForm.cs">
       <SubType>Form</SubType>
     </Compile>

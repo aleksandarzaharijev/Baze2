@@ -23,10 +23,10 @@ namespace ProjekatBaze2.Forme
             InitializeComponent();
             this.banka = b;
         }
-        private void ProdavnicaUpdateForm_Load(object sender, EventArgs e)
+        private void IzmeniBankuForm_Load(object sender, EventArgs e)
         {
             popuni();
-            this.Text = $"AZURIRANJE PRODAVNICE {banka.Ime.ToUpper()}";
+            this.Text = $"AZURIRANJE BANKE {banka.Ime.ToUpper()}";
         }
 
         public void popuni()

@@ -33,21 +33,22 @@
             this.btnIzmeniBanku = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listaBanke = new System.Windows.Forms.ListView();
-            this.btnKlijenti = new System.Windows.Forms.Button();
             this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AdresaCentrale = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.WebAdresa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Ime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnKlijenti = new System.Windows.Forms.Button();
             this.btnBankaTelefoni = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDodajBanku
             // 
-            this.btnDodajBanku.Location = new System.Drawing.Point(819, 19);
+            this.btnDodajBanku.Location = new System.Drawing.Point(614, 33);
+            this.btnDodajBanku.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDodajBanku.Name = "btnDodajBanku";
-            this.btnDodajBanku.Size = new System.Drawing.Size(240, 47);
+            this.btnDodajBanku.Size = new System.Drawing.Size(180, 38);
             this.btnDodajBanku.TabIndex = 0;
             this.btnDodajBanku.Text = "Dodaj banku";
             this.btnDodajBanku.UseVisualStyleBackColor = true;
@@ -55,18 +56,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(298, 439);
+            this.button1.Location = new System.Drawing.Point(224, 357);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 47);
+            this.button1.Size = new System.Drawing.Size(181, 38);
             this.button1.TabIndex = 1;
             this.button1.Text = "Izmeni banku";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // btnIzmeniBanku
             // 
-            this.btnIzmeniBanku.Location = new System.Drawing.Point(819, 118);
+            this.btnIzmeniBanku.Location = new System.Drawing.Point(614, 96);
+            this.btnIzmeniBanku.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIzmeniBanku.Name = "btnIzmeniBanku";
-            this.btnIzmeniBanku.Size = new System.Drawing.Size(241, 47);
+            this.btnIzmeniBanku.Size = new System.Drawing.Size(181, 38);
             this.btnIzmeniBanku.TabIndex = 2;
             this.btnIzmeniBanku.Text = "Izmeni banku";
             this.btnIzmeniBanku.UseVisualStyleBackColor = true;
@@ -76,9 +79,11 @@
             // 
             this.groupBox1.Controls.Add(this.listaBanke);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(21, 19);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(771, 644);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(578, 523);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dostupne banke";
@@ -96,21 +101,13 @@
             this.listaBanke.FullRowSelect = true;
             this.listaBanke.GridLines = true;
             this.listaBanke.HideSelection = false;
-            this.listaBanke.Location = new System.Drawing.Point(3, 22);
+            this.listaBanke.Location = new System.Drawing.Point(2, 18);
+            this.listaBanke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listaBanke.Name = "listaBanke";
-            this.listaBanke.Size = new System.Drawing.Size(765, 619);
+            this.listaBanke.Size = new System.Drawing.Size(574, 503);
             this.listaBanke.TabIndex = 4;
             this.listaBanke.UseCompatibleStateImageBehavior = false;
             this.listaBanke.View = System.Windows.Forms.View.Details;
-            // 
-            // btnKlijenti
-            // 
-            this.btnKlijenti.Location = new System.Drawing.Point(819, 283);
-            this.btnKlijenti.Name = "btnKlijenti";
-            this.btnKlijenti.Size = new System.Drawing.Size(241, 41);
-            this.btnKlijenti.TabIndex = 4;
-            this.btnKlijenti.Text = "Klijenti";
-            this.btnKlijenti.UseVisualStyleBackColor = true;
             // 
             // Id
             // 
@@ -141,27 +138,40 @@
             this.Email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Email.Width = 140;
             // 
+            // btnKlijenti
+            // 
+            this.btnKlijenti.Location = new System.Drawing.Point(614, 230);
+            this.btnKlijenti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKlijenti.Name = "btnKlijenti";
+            this.btnKlijenti.Size = new System.Drawing.Size(181, 33);
+            this.btnKlijenti.TabIndex = 4;
+            this.btnKlijenti.Text = "Klijenti";
+            this.btnKlijenti.UseVisualStyleBackColor = true;
+            // 
             // btnBankaTelefoni
             // 
-            this.btnBankaTelefoni.Location = new System.Drawing.Point(819, 188);
+            this.btnBankaTelefoni.Location = new System.Drawing.Point(614, 153);
+            this.btnBankaTelefoni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBankaTelefoni.Name = "btnBankaTelefoni";
-            this.btnBankaTelefoni.Size = new System.Drawing.Size(240, 37);
+            this.btnBankaTelefoni.Size = new System.Drawing.Size(180, 30);
             this.btnBankaTelefoni.TabIndex = 5;
             this.btnBankaTelefoni.Text = "Kontakt telefoni";
             this.btnBankaTelefoni.UseVisualStyleBackColor = true;
+            this.btnBankaTelefoni.Click += new System.EventHandler(this.btnBankaTelefoni_Click);
             // 
             // BankaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1072, 683);
+            this.ClientSize = new System.Drawing.Size(804, 555);
             this.Controls.Add(this.btnBankaTelefoni);
             this.Controls.Add(this.btnKlijenti);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnIzmeniBanku);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDodajBanku);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BankaForm";
             this.Text = "BankaForm";
             this.Load += new System.EventHandler(this.BankaForm_Load);

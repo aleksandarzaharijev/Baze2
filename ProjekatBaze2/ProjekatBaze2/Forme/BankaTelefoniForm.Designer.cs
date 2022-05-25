@@ -31,72 +31,89 @@
             this.btnDodajBrojBanke = new System.Windows.Forms.Button();
             this.btnObrisiBrojBanke = new System.Windows.Forms.Button();
             this.btnIzmeniBrojBanke = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
+            this.listaBrojBanke = new System.Windows.Forms.ListView();
+            this.gbxKontaktTelefoni = new System.Windows.Forms.GroupBox();
+            this.BrojTelefona = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.gbxKontaktTelefoni.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDodajBrojBanke
             // 
-            this.btnDodajBrojBanke.Location = new System.Drawing.Point(546, 40);
+            this.btnDodajBrojBanke.Location = new System.Drawing.Point(273, 79);
+            this.btnDodajBrojBanke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDodajBrojBanke.Name = "btnDodajBrojBanke";
-            this.btnDodajBrojBanke.Size = new System.Drawing.Size(166, 23);
+            this.btnDodajBrojBanke.Size = new System.Drawing.Size(124, 30);
             this.btnDodajBrojBanke.TabIndex = 0;
             this.btnDodajBrojBanke.Text = "Dodaj kontakt telefon";
             this.btnDodajBrojBanke.UseVisualStyleBackColor = true;
+            this.btnDodajBrojBanke.Click += new System.EventHandler(this.btnDodajBrojBanke_Click);
             // 
             // btnObrisiBrojBanke
             // 
-            this.btnObrisiBrojBanke.Location = new System.Drawing.Point(547, 146);
+            this.btnObrisiBrojBanke.Location = new System.Drawing.Point(273, 165);
+            this.btnObrisiBrojBanke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnObrisiBrojBanke.Name = "btnObrisiBrojBanke";
-            this.btnObrisiBrojBanke.Size = new System.Drawing.Size(166, 23);
+            this.btnObrisiBrojBanke.Size = new System.Drawing.Size(124, 30);
             this.btnObrisiBrojBanke.TabIndex = 1;
             this.btnObrisiBrojBanke.Text = "Obrisi kontakt telefon";
             this.btnObrisiBrojBanke.UseVisualStyleBackColor = true;
             // 
             // btnIzmeniBrojBanke
             // 
-            this.btnIzmeniBrojBanke.Location = new System.Drawing.Point(547, 95);
+            this.btnIzmeniBrojBanke.Location = new System.Drawing.Point(273, 123);
+            this.btnIzmeniBrojBanke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIzmeniBrojBanke.Name = "btnIzmeniBrojBanke";
-            this.btnIzmeniBrojBanke.Size = new System.Drawing.Size(166, 23);
+            this.btnIzmeniBrojBanke.Size = new System.Drawing.Size(124, 30);
             this.btnIzmeniBrojBanke.TabIndex = 2;
-            this.btnIzmeniBrojBanke.Text = "Zameni kontakt telefon";
+            this.btnIzmeniBrojBanke.Text = "Izmeni kontakt telefon";
             this.btnIzmeniBrojBanke.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // listaBrojBanke
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(17, 21);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(478, 326);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listaBrojBanke.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.BrojTelefona});
+            this.listaBrojBanke.HideSelection = false;
+            this.listaBrojBanke.Location = new System.Drawing.Point(13, 17);
+            this.listaBrojBanke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listaBrojBanke.Name = "listaBrojBanke";
+            this.listaBrojBanke.Size = new System.Drawing.Size(256, 266);
+            this.listaBrojBanke.TabIndex = 3;
+            this.listaBrojBanke.UseCompatibleStateImageBehavior = false;
+            this.listaBrojBanke.View = System.Windows.Forms.View.Details;
             // 
-            // groupBox1
+            // gbxKontaktTelefoni
             // 
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Controls.Add(this.btnObrisiBrojBanke);
-            this.groupBox1.Controls.Add(this.btnIzmeniBrojBanke);
-            this.groupBox1.Controls.Add(this.btnDodajBrojBanke);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(737, 393);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.gbxKontaktTelefoni.Controls.Add(this.listaBrojBanke);
+            this.gbxKontaktTelefoni.Controls.Add(this.btnObrisiBrojBanke);
+            this.gbxKontaktTelefoni.Controls.Add(this.btnIzmeniBrojBanke);
+            this.gbxKontaktTelefoni.Controls.Add(this.btnDodajBrojBanke);
+            this.gbxKontaktTelefoni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbxKontaktTelefoni.Location = new System.Drawing.Point(0, 0);
+            this.gbxKontaktTelefoni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxKontaktTelefoni.Name = "gbxKontaktTelefoni";
+            this.gbxKontaktTelefoni.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxKontaktTelefoni.Size = new System.Drawing.Size(405, 319);
+            this.gbxKontaktTelefoni.TabIndex = 4;
+            this.gbxKontaktTelefoni.TabStop = false;
+            this.gbxKontaktTelefoni.Text = "Kontakt telefoni";
+            // 
+            // BrojTelefona
+            // 
+            this.BrojTelefona.Text = "Broj Telefona";
+            this.BrojTelefona.Width = 250;
             // 
             // BankaTelefoniForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(737, 393);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(405, 319);
+            this.Controls.Add(this.gbxKontaktTelefoni);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BankaTelefoniForm";
             this.Text = "BankaTelefoniForm";
-            this.groupBox1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.BankaTelefoniForm_Load);
+            this.gbxKontaktTelefoni.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -106,7 +123,8 @@
         private System.Windows.Forms.Button btnDodajBrojBanke;
         private System.Windows.Forms.Button btnObrisiBrojBanke;
         private System.Windows.Forms.Button btnIzmeniBrojBanke;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListView listaBrojBanke;
+        private System.Windows.Forms.GroupBox gbxKontaktTelefoni;
+        private System.Windows.Forms.ColumnHeader BrojTelefona;
     }
 }
