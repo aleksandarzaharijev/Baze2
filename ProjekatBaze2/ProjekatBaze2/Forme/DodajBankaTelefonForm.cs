@@ -21,5 +21,10 @@ namespace ProjekatBaze2.Forme
         {
 
         }
+
+        private void btnDodajBroj_Click(object sender, EventArgs e)
+        {
+            Banka_telefoniBasic b = new Banka_telefoniBasic();
+        }
     }
 }
