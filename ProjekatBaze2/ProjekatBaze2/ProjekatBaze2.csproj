@@ -143,6 +143,18 @@
     <Compile Include="Forme\BankomatiForm.Designer.cs">
       <DependentUpon>BankomatiForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DevizniRacuniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DevizniRacuniForm.Designer.cs">
+      <DependentUpon>DevizniRacuniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DinarskiRacuniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DinarskiRacuniForm.Designer.cs">
+      <DependentUpon>DinarskiRacuniForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajBankaTelefonForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,11 +167,53 @@
     <Compile Include="Forme\DodajBankuForm.Designer.cs">
       <DependentUpon>DodajBankuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forme\DodajBrojBankeForm.cs">
+    <Compile Include="Forme\DodajDevizniRacunForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forme\DodajBrojBankeForm.Designer.cs">
-      <DependentUpon>DodajBrojBankeForm.cs</DependentUpon>
+    <Compile Include="Forme\DodajDevizniRacunForm.Designer.cs">
+      <DependentUpon>DodajDevizniRacunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajFilijaluForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajFilijaluForm.Designer.cs">
+      <DependentUpon>DodajFilijaluForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajFizickaLicaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajFizickaLicaForm.Designer.cs">
+      <DependentUpon>DodajFizickaLicaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajPravnaLicaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajPravnaLicaForm.Designer.cs">
+      <DependentUpon>DodajPravnaLicaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FilijalaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FilijalaForm.Designer.cs">
+      <DependentUpon>FilijalaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FizickaLicaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FizickaLicaForm.Designer.cs">
+      <DependentUpon>FizickaLicaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzbrisiDevizniRacunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzbrisiDevizniRacunForm.Designer.cs">
+      <DependentUpon>IzbrisiDevizniRacunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzbrisiFizickaLicaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzbrisiFizickaLicaForm.Designer.cs">
+      <DependentUpon>IzbrisiFizickaLicaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\IzmeniBankaTelefonForm.cs">
       <SubType>Form</SubType>
@@ -173,11 +227,41 @@
     <Compile Include="Forme\IzmeniBankuForm.Designer.cs">
       <DependentUpon>IzmeniBankuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\IzmeniDevizniRacunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniDevizniRacunForm.Designer.cs">
+      <DependentUpon>IzmeniDevizniRacunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniFilijaluForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniFilijaluForm.Designer.cs">
+      <DependentUpon>IzmeniFilijaluForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniFizickaLicaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniFizickaLicaForm.Designer.cs">
+      <DependentUpon>IzmeniFizickaLicaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniPravnaLicaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniPravnaLicaForm.Designer.cs">
+      <DependentUpon>IzmeniPravnaLicaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\KlijentiForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\KlijentiForm.Designer.cs">
       <DependentUpon>KlijentiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PravnaLicaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PravnaLicaForm.Designer.cs">
+      <DependentUpon>PravnaLicaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PocetnaStranica.cs">
       <SubType>Form</SubType>

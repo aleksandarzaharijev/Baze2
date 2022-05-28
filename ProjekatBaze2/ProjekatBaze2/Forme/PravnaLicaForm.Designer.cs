@@ -1,6 +1,6 @@
 ﻿namespace ProjekatBaze2.Forme
 {
-    partial class DodajBrojBankeForm
+    partial class PravnaLicaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "DodajBrojBankeForm";
+            this.Text = "PravnaLicaForm";
         }
 
         #endregion

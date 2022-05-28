@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjekatBaze2.Forme
 {
-    public partial class DodajBrojBankeForm : Form
+    public partial class DodajFilijaluForm : Form
     {
-        public DodajBrojBankeForm()
+        public DodajFilijaluForm()
         {
             InitializeComponent();
         }

@@ -84,10 +84,18 @@ namespace ProjekatBaze2
     }
     public class Banka_telefoniBasic
     {
+        public BankaBasic b;
         public int id;
 
         public string Broj_Telefona;
         public Banka_telefoniBasic() { }
+
+        public Banka_telefoniBasic(int idBanke, int id, string broj_Telefona)
+        {
+            b.Id = idBanke;
+            this.id = id;
+            broj_Telefona = Broj_Telefona;
+        }
         public Banka_telefoniBasic(int id, string broj_Telefona)
 
         {

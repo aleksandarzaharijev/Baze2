@@ -32,11 +32,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIzmenaTelefona = new System.Windows.Forms.TextBox();
+            this.btnIzmeniBrojBanke = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnIzmeniBrojBanke);
             this.groupBox1.Controls.Add(this.txtIzmenaTelefona);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -76,6 +78,16 @@
             this.txtIzmenaTelefona.Size = new System.Drawing.Size(199, 22);
             this.txtIzmenaTelefona.TabIndex = 2;
             // 
+            // btnIzmeniBrojBanke
+            // 
+            this.btnIzmeniBrojBanke.Location = new System.Drawing.Point(141, 212);
+            this.btnIzmeniBrojBanke.Name = "btnIzmeniBrojBanke";
+            this.btnIzmeniBrojBanke.Size = new System.Drawing.Size(199, 23);
+            this.btnIzmeniBrojBanke.TabIndex = 3;
+            this.btnIzmeniBrojBanke.Text = "Izmeni\r\n";
+            this.btnIzmeniBrojBanke.UseVisualStyleBackColor = true;
+            this.btnIzmeniBrojBanke.Click += new System.EventHandler(this.btnIzmeniBrojBanke_Click);
+            // 
             // IzmeniBankaTelefonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -84,6 +96,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "IzmeniBankaTelefonForm";
             this.Text = "IzmeniBankaTelefonForm";
+            this.Load += new System.EventHandler(this.IzmeniBankaTelefonForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -96,5 +109,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtIzmenaTelefona;
+        private System.Windows.Forms.Button btnIzmeniBrojBanke;
     }
 }

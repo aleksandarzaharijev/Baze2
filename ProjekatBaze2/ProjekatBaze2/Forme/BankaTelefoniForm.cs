@@ -27,8 +27,8 @@ namespace ProjekatBaze2.Forme
 
         private void btnDodajBrojBanke_Click(object sender, EventArgs e)
         {
-            Forme.DodajBankaTelefonForm forma = new Forme.DodajBankaTelefonForm();
-            forma.ShowDialog();
+            //Forme.DodajBankaTelefonForm forma = new Forme.DodajBankaTelefonForm(banka.Id);
+            //forma.ShowDialog();
             popuniTabelu();
         }
 

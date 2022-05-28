@@ -76,6 +76,7 @@ namespace ProjekatBaze2
             }
             return b;
         }
+     
         public static BankaBasic vratiBanku(int id)
         {
             BankaBasic b = new BankaBasic();

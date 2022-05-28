@@ -29,47 +29,51 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtDodajBankaBroj = new System.Windows.Forms.TextBox();
+            this.btnDodajBankaBroj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 48);
+            this.label1.Location = new System.Drawing.Point(29, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 18);
+            this.label1.Size = new System.Drawing.Size(119, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Broj telefona:";
             // 
-            // textBox1
+            // txtDodajBankaBroj
             // 
-            this.textBox1.Location = new System.Drawing.Point(137, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtDodajBankaBroj.Location = new System.Drawing.Point(183, 60);
+            this.txtDodajBankaBroj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDodajBankaBroj.Name = "txtDodajBankaBroj";
+            this.txtDodajBankaBroj.Size = new System.Drawing.Size(236, 22);
+            this.txtDodajBankaBroj.TabIndex = 1;
             // 
-            // button1
+            // btnDodajBankaBroj
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(98, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Dodaj broj";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDodajBankaBroj.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDodajBankaBroj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDodajBankaBroj.Location = new System.Drawing.Point(131, 107);
+            this.btnDodajBankaBroj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDodajBankaBroj.Name = "btnDodajBankaBroj";
+            this.btnDodajBankaBroj.Size = new System.Drawing.Size(167, 44);
+            this.btnDodajBankaBroj.TabIndex = 2;
+            this.btnDodajBankaBroj.Text = "Dodaj broj";
+            this.btnDodajBankaBroj.UseVisualStyleBackColor = false;
+            this.btnDodajBankaBroj.Click += new System.EventHandler(this.button1_Click);
             // 
             // DodajBankaTelefonForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 151);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(453, 186);
+            this.Controls.Add(this.btnDodajBankaBroj);
+            this.Controls.Add(this.txtDodajBankaBroj);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DodajBankaTelefonForm";
             this.Text = "DodajTelefon";
             this.Load += new System.EventHandler(this.DodajBankaTelefonForm_Load);
@@ -81,7 +85,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtDodajBankaBroj;
+        private System.Windows.Forms.Button btnDodajBankaBroj;
     }
 }
