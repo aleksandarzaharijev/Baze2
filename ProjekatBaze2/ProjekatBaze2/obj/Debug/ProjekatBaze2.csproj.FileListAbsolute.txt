@@ -201,3 +201,5 @@ C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.pdb
 C:\Users\AleksandarZaharijev\source\repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.IzmeniBankaTelefonForm.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankaTelefoni.resources
+C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajFilijaluForm.resources
+C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.FilijalaForm.resources

@@ -15,7 +15,7 @@ namespace ProjekatBaze2.Entiteti
         public virtual bool Status { get; set; }   
         public virtual DateTime DatumPoslednjegServisa { get; set; }
 
-        public Filijala FilijalaId { get; set; }
+        public virtual Filijala FilijalaId { get; set; }
         public virtual IList<Bankomat_komentari> Komentari { get; set; }
         public virtual IList<Transakcija> Transakcije { get;  set; }
        // public virtual int BrojFilijala { get; set; }

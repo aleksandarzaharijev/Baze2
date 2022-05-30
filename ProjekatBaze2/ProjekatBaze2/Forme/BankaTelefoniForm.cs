@@ -79,11 +79,16 @@ namespace ProjekatBaze2.Forme
 
         private void btnObrisiBrojBanke_Click(object sender, EventArgs e)
         {
-            string poruka = "Da li zelite da obrisete izabrano odeljenje?";
+            string poruka = "Da li zelite da obrisete izabrani telefon?";
             string title = "Pitanje";
             MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
             DialogResult result = MessageBox.Show(poruka, title, buttons);
             int idBroj = Int32.Parse(listaBrojBanke.SelectedItems[0].SubItems[0].Text);
+            if (idBroj == 0)
+            {
+                MessageBox.Show("Morate selektovati broj");
+                return;
+            }    
             if (result == DialogResult.OK)
             {
                 DTOManager.obrisiBroj(idBroj);

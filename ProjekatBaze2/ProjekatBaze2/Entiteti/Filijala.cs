@@ -14,7 +14,7 @@ namespace ProjekatBaze2.Entiteti
 
         public virtual string RadnoVreme { get; set; }
 
-
+        public virtual Banka BankaId { get; set; }
         public virtual IList<Bankomat> Bankomati { get; set; }
         public Filijala()
         {

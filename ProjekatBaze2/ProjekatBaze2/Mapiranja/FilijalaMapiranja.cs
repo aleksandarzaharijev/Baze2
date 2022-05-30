@@ -17,10 +17,13 @@ namespace ProjekatBaze2.Mapiranja
             Map(x => x.Adresa, "ADRESA");
             Map(x => x.BrojTelefona, "BROJTELEFONA");
             Map(x => x.RadnoVreme, "RADNOVREME");
+            References(x => x.BankaId).Column("JEDBRBANKE").LazyLoad();
 
             HasMany(x => x.Bankomati).KeyColumn("RBRFILIJALA").LazyLoad().Cascade.All().Inverse();
-       
-            
+
+          
+
+
         }
     }
 }

@@ -472,6 +472,7 @@ namespace ProjekatBaze2
         public virtual IList<BankomatBasic> Bankomati { get; set; }
         public FilijalaBasic()
         {
+            
             Bankomati = new List<BankomatBasic>();
 
         }

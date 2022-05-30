@@ -68,5 +68,18 @@ namespace ProjekatBaze2.Forme
             BankaTelefoniForm forma = new BankaTelefoniForm(banka);
             forma.ShowDialog();
         }
+
+        private void btnFilijaleForm_Click(object sender, EventArgs e)
+        {
+            if (listaBanke.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Izaberite banku cije podatke zelite da promenite!");
+                return;
+            }
+            int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
+            BankaBasic banka = DTOManager.vratiBanku(idBanke);
+            FilijalaForm forma = new FilijalaForm(banka);
+            forma.ShowDialog();
+        }
     }
 }
