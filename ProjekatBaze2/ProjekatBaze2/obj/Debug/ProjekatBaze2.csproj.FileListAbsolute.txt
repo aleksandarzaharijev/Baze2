@@ -189,7 +189,6 @@ C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Form1.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.BankaForm.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.BankaTelefoniForm.resources
-C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankaTelefonForm.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankuForm.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.IzmeniBankuForm.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.KlijentiForm.resources
@@ -200,3 +199,5 @@ C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.csproj.CopyComplete
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.exe
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.pdb
+C:\Users\AleksandarZaharijev\source\repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.IzmeniBankaTelefonForm.resources
+C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankaTelefoni.resources

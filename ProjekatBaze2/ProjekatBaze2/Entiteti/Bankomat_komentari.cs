@@ -10,6 +10,8 @@ namespace ProjekatBaze2.Entiteti
     {
         public virtual int Id { get; set; }
         public virtual string DodatniKomentari{ get; set; }
+
+        public virtual Bankomat bankomat { get; set; }
         //public virtual  { get; set; }
     }
 }

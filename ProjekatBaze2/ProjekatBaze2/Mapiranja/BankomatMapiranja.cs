@@ -18,7 +18,7 @@ namespace ProjekatBaze2.Mapiranja
             Map(x => x.Status, "STATUS");
             Map(x => x.NazivProizvodjaca , "NAZIVPROIZVODJACA");
             Map(x => x.DatumPoslednjegServisa, "DATPOSLSERVISA");
-
+            References(x => x.FilijalaId).Column("RBRFILIJALA").LazyLoad();
             HasMany(x => x.Transakcije).KeyColumn("JEDBRBANKOMATA").LazyLoad().Cascade.All().Inverse();
         }
     }

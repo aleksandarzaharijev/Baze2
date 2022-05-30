@@ -18,6 +18,7 @@ namespace ProjekatBaze2.Mapiranja
             Map(x => x.Broj_Telefona, "BROJTELEFONA");
             //dodat je neki komentar
 
+            References(x => x.BrojBanke).Column("BROJBANKE").LazyLoad();
 
         }
 
