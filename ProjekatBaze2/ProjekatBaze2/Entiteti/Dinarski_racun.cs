@@ -22,6 +22,8 @@ namespace ProjekatBaze2.Entiteti
 
         public virtual Banka RacunBanka { get; set; }
 
+        public virtual Klijent RacunKlijent { get; set; }
+
         //public virtual IList>
 
         public Dinarski_racun()

@@ -311,3 +311,4 @@ C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\De
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.csproj.CopyComplete
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.exe
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.pdb
+C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.IzmeniDinarskiRacun.resources

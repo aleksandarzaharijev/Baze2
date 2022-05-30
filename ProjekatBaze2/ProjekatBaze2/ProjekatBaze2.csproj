@@ -233,6 +233,12 @@
     <Compile Include="Forme\IzmeniDevizniRacunForm.Designer.cs">
       <DependentUpon>IzmeniDevizniRacunForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\IzmeniDinarskiRacun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniDinarskiRacun.Designer.cs">
+      <DependentUpon>IzmeniDinarskiRacun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\IzmeniFilijaluForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\IzmeniBankuForm.resx">
       <DependentUpon>IzmeniBankuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniDinarskiRacun.resx">
+      <DependentUpon>IzmeniDinarskiRacun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\KlijentiForm.resx">
       <DependentUpon>KlijentiForm.cs</DependentUpon>
