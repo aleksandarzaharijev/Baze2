@@ -12,9 +12,16 @@ namespace ProjekatBaze2.Forme
 {
     public partial class FizickaLicaForm : Form
     {
+        BankaBasic banka;
         public FizickaLicaForm()
         {
             InitializeComponent();
+        }
+
+        public FizickaLicaForm(BankaBasic b)
+        {
+            InitializeComponent();
+            banka = b;
         }
     }
 }

@@ -12,5 +12,7 @@ namespace ProjekatBaze2.Entiteti
         public virtual int Id { get; set; }
 
         public virtual string Dodatni_komentar { get; set; }
+
+        public virtual Klijent klijent { get; set; }
     }
 }

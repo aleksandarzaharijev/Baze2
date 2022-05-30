@@ -10,5 +10,6 @@ namespace ProjekatBaze2.Entiteti
     {
         public virtual int Id { get; set; }
         public virtual string Imena_Lica { get; set; }
+        public virtual Dinarski_racun Dinarski_Racun  { get; set; }
     }
 }

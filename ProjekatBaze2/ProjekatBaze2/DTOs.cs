@@ -352,7 +352,7 @@ namespace ProjekatBaze2
     #region Dinarski racun
     public class Dinarski_racunPregled
         {
-        public int Id;
+        public long Id;
 
         public DateTime DatumOtvaranja;
 
@@ -362,7 +362,7 @@ namespace ProjekatBaze2
         {
 
         }
-        public Dinarski_racunPregled(int id, DateTime datumOtvaranja, int saldo)
+        public Dinarski_racunPregled(long id, DateTime datumOtvaranja, int saldo)
         {
             Id = id;
             DatumOtvaranja = datumOtvaranja;
@@ -370,7 +370,7 @@ namespace ProjekatBaze2
         }
     }
     public class Dinarski_racunBasic {
-        public int Id;
+        public long Id;
 
         public DateTime DatumOtvaranja;
 
@@ -388,7 +388,7 @@ namespace ProjekatBaze2
             Kreditne_kartice = new List<Kreditna_karticaBasic>();
         }
 
-        public Dinarski_racunBasic(int id, DateTime datumOtvaranja, int saldo)
+        public Dinarski_racunBasic(long id, DateTime datumOtvaranja, int saldo)
         {
             Id = id;
             DatumOtvaranja = datumOtvaranja;

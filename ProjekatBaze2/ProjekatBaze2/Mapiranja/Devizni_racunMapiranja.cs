@@ -24,6 +24,8 @@ namespace ProjekatBaze2.Mapiranja
 
             HasMany(x => x.Debitne_kartice).KeyColumn("DEVIZNI_BR_RAC").LazyLoad().Cascade.All().Inverse();
             HasMany(x => x.Kreditne_kartice).KeyColumn("DEVIZNI_BR_RAC").LazyLoad().Cascade.All().Inverse();
+
+            References(x => x.RacunBanka).Column("JEDBRBANKE").LazyLoad();
         }
     }
 }

@@ -96,7 +96,7 @@ namespace ProjekatBaze2
         #endregion
 
         #region Banka_Telefoni
-        public static List<Banka_telefoniPregled> vratiSveBrojeveTelefona()
+        public static List<Banka_telefoniPregled> vratiSveBrojeveTelefona() //zar ova funckija nije ista kao i u 181. liniji 
         {
             List<Banka_telefoniPregled> bankaTelefoni = new List<Banka_telefoniPregled>();
             try
@@ -174,7 +174,7 @@ namespace ProjekatBaze2
             }
             catch(Exception e)
             {
-               
+                Console.WriteLine(e);
             }
             return tel;
         }
@@ -212,11 +212,12 @@ namespace ProjekatBaze2
             catch (Exception e)
 
             {
-
+                Console.WriteLine(e);
             }
         }
         #endregion
 
+<<<<<<< HEAD
         #region Filijale
 
         public static void dodajFilijalu(FilijalaBasic f , int id)
@@ -294,6 +295,31 @@ namespace ProjekatBaze2
 
         #region
         #endregion
+=======
+        #region Dinarski_Racuni
+        public static List<Dinarski_racunPregled> vratiSveDinarskeRacune(int id)
+        {
+            List<Dinarski_racunPregled> dinarskiRacuni = new List<Dinarski_racunPregled>();
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IEnumerable<Dinarski_racun> sviDinarskiRacuni = from o in s.Query<Dinarski_racun>() 
+                                                                where o.RacunBanka.Id==id select o;
+                foreach(Dinarski_racun d in sviDinarskiRacuni)
+                {
+                    dinarskiRacuni.Add(new Dinarski_racunPregled(d.Id, d.DatumOtvaranja, d.Saldo));
+                }
+                s.Close();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            return dinarskiRacuni;
+        }
+
+        #endregion
+>>>>>>> 99a96c349ae4d26b7065742c05059c62abe438ad
     }
 
-    }
+}

@@ -24,7 +24,7 @@ namespace ProjekatBaze2.Mapiranja
            // HasMany(x => x.Fizicka_Lica).KeyColumn("JEDIDENTFBROJ").LazyLoad().Cascade.All().Inverse();
            // HasMany(x => x.Pravna_Lica).KeyColumn("JEDIDENTFBROJ").LazyLoad().Cascade.All().Inverse();
         
-            HasMany(x => x.Klijent_Komentari).KeyColumn("IDKLIJENTKOMENTARI").LazyLoad().Cascade.All().Inverse();
+            HasMany(x => x.Klijent_Komentari).KeyColumn("JEDIDENTFBROJ").LazyLoad().Cascade.All().Inverse();
         }
     }
    

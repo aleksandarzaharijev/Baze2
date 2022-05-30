@@ -8,7 +8,7 @@ namespace ProjekatBaze2.Entiteti
 {
     public class Dinarski_racun
     {
-        public virtual int Id { get; set; }
+        public virtual long Id { get; set; }
 
         public virtual DateTime DatumOtvaranja { get; set; }
 
@@ -19,6 +19,8 @@ namespace ProjekatBaze2.Entiteti
         public virtual IList<Debitna_kartica> Debitne_kartice { get; set; }
 
         public virtual IList<Kreditna_kartica> Kreditne_kartice { get; set; }
+
+        public virtual Banka RacunBanka { get; set; }
 
         //public virtual IList>
 

@@ -44,20 +44,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(34, 78);
+            this.label1.Location = new System.Drawing.Point(26, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.Size = new System.Drawing.Size(77, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ime banke:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(34, 123);
+            this.label2.Location = new System.Drawing.Point(26, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.Size = new System.Drawing.Size(89, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Web adresa:";
             // 
@@ -65,9 +66,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(34, 175);
+            this.label3.Location = new System.Drawing.Point(26, 142);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.Size = new System.Drawing.Size(50, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Email: ";
             // 
@@ -75,47 +77,53 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(34, 224);
+            this.label4.Location = new System.Drawing.Point(26, 182);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.Size = new System.Drawing.Size(112, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Adresa centrale:";
             // 
             // txtBankaIme
             // 
-            this.txtBankaIme.Location = new System.Drawing.Point(194, 78);
+            this.txtBankaIme.Location = new System.Drawing.Point(146, 63);
+            this.txtBankaIme.Margin = new System.Windows.Forms.Padding(2);
             this.txtBankaIme.Name = "txtBankaIme";
-            this.txtBankaIme.Size = new System.Drawing.Size(178, 22);
+            this.txtBankaIme.Size = new System.Drawing.Size(134, 20);
             this.txtBankaIme.TabIndex = 4;
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(194, 123);
+            this.txtAdresa.Location = new System.Drawing.Point(146, 100);
+            this.txtAdresa.Margin = new System.Windows.Forms.Padding(2);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.Size = new System.Drawing.Size(178, 22);
+            this.txtAdresa.Size = new System.Drawing.Size(134, 20);
             this.txtAdresa.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(194, 173);
+            this.txtEmail.Location = new System.Drawing.Point(146, 141);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(178, 22);
+            this.txtEmail.Size = new System.Drawing.Size(134, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // TxtAdresaCentrale
             // 
-            this.TxtAdresaCentrale.Location = new System.Drawing.Point(194, 224);
+            this.TxtAdresaCentrale.Location = new System.Drawing.Point(146, 182);
+            this.TxtAdresaCentrale.Margin = new System.Windows.Forms.Padding(2);
             this.TxtAdresaCentrale.Name = "TxtAdresaCentrale";
-            this.TxtAdresaCentrale.Size = new System.Drawing.Size(178, 22);
+            this.TxtAdresaCentrale.Size = new System.Drawing.Size(134, 20);
             this.TxtAdresaCentrale.TabIndex = 7;
             // 
             // btnDodajBankuKonacno
             // 
-            this.btnDodajBankuKonacno.BackColor = System.Drawing.Color.Teal;
+            this.btnDodajBankuKonacno.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnDodajBankuKonacno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.btnDodajBankuKonacno.Location = new System.Drawing.Point(38, 271);
+            this.btnDodajBankuKonacno.Location = new System.Drawing.Point(28, 220);
+            this.btnDodajBankuKonacno.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajBankuKonacno.Name = "btnDodajBankuKonacno";
-            this.btnDodajBankuKonacno.Size = new System.Drawing.Size(334, 41);
+            this.btnDodajBankuKonacno.Size = new System.Drawing.Size(250, 33);
             this.btnDodajBankuKonacno.TabIndex = 8;
             this.btnDodajBankuKonacno.Text = "Dodaj";
             this.btnDodajBankuKonacno.UseVisualStyleBackColor = false;
@@ -125,18 +133,19 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.3F);
-            this.label5.Location = new System.Drawing.Point(35, 21);
+            this.label5.Location = new System.Drawing.Point(26, 17);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(356, 25);
+            this.label5.Size = new System.Drawing.Size(271, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Unošenje osnovnih podataka banke";
             // 
             // DodajBankuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(479, 374);
+            this.ClientSize = new System.Drawing.Size(315, 273);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnDodajBankuKonacno);
             this.Controls.Add(this.TxtAdresaCentrale);
@@ -148,11 +157,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DodajBankuForm";
             this.Text = "Dodaj banku";
-            this.Load += new System.EventHandler(this.DodajBankuForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

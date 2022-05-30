@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjekatBaze2.Forme
 {
-    public partial class PravnaLicaForm : Form
+    public partial class IzmeniDinarskiRacun : Form
     {
-        BankaBasic banka;
-
-        public PravnaLicaForm()
+        public IzmeniDinarskiRacun()
         {
             InitializeComponent();
-        }
-
-        public PravnaLicaForm(BankaBasic b)
-        {
-            InitializeComponent();
-            banka = b;
         }
     }
 }

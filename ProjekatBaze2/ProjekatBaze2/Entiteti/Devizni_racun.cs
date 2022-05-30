@@ -22,6 +22,8 @@ namespace ProjekatBaze2.Entiteti
 
         public virtual IList<Kreditna_kartica> Kreditne_kartice { get; set; }
 
+        public virtual Banka RacunBanka { get; set; }
+
         public Devizni_racun()
         {
             Devizni_Racun_Lica = new List<Devizni_racun_lica>();
