@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\ProjekatBaze2",
-    "\\ProjekatBaze2\\ProjekatBaze2"
+    "\\ProjekatBaze2\\ProjekatBaze2",
+    "\\ProjekatBaze2\\ProjekatBaze2\\Entiteti",
+    "\\ProjekatBaze2\\ProjekatBaze2\\Forme"
   ],
-  "SelectedNode": "\\ProjekatBaze2\\ProjekatBaze2\\ProjekatBaze2.sln",
+  "SelectedNode": "\\ProjekatBaze2\\ProjekatBaze2\\Entiteti\\Filijala.cs",
   "PreviewInSolutionExplorer": false
 }

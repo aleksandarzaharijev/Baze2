@@ -217,6 +217,85 @@ namespace ProjekatBaze2
         }
         #endregion
 
+<<<<<<< HEAD
+        #region Filijale
+
+        public static void dodajFilijalu(FilijalaBasic f , int id)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Filijala filijala = new Filijala();
+                filijala.Adresa = f.Adresa;
+                filijala.BrojTelefona = f.BrojTelefona;
+                filijala.RadnoVreme = f.BrojTelefona;
+                Banka bank = s.Load<Banka>(id);
+                filijala.BankaId = bank;
+
+                s.SaveOrUpdate(filijala);
+                s.Flush();
+                s.Close();
+
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
+        public static FilijalaBasic izmeniFilijalu(FilijalaBasic f)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Filijala filijala = s.Load<Filijala>(f.Id);
+                filijala.Adresa = f.Adresa;
+                filijala.BrojTelefona = f.BrojTelefona;
+                filijala.RadnoVreme = f.BrojTelefona;
+
+                s.SaveOrUpdate(filijala);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            return f;
+        }
+        public static List<FilijalaPregled> vratiFilijale(int id)
+        {
+            List<FilijalaPregled> filijale = new List<FilijalaPregled>();
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IEnumerable<Filijala> filijala = from o in s.Query<Filijala>()
+                                                       where o.BankaId.Id == id
+                                                       select o;
+                foreach (Filijala r in filijala)
+                {
+                    filijale.Add(new FilijalaPregled(r.Id,r.Adresa, r.BrojTelefona,r.RadnoVreme));
+                }
+                s.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            return filijale;
+        }
+        
+
+
+        #endregion
+
+
+        #region
+        #endregion
+=======
         #region Dinarski_Racuni
         public static List<Dinarski_racunPregled> vratiSveDinarskeRacune(int id)
         {
@@ -240,6 +319,7 @@ namespace ProjekatBaze2
         }
 
         #endregion
+>>>>>>> 99a96c349ae4d26b7065742c05059c62abe438ad
     }
 
 }

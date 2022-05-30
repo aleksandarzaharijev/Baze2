@@ -310,6 +310,12 @@
     <EmbeddedResource Include="Forme\DodajBankuForm.resx">
       <DependentUpon>DodajBankuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajFilijaluForm.resx">
+      <DependentUpon>DodajFilijaluForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FilijalaForm.resx">
+      <DependentUpon>FilijalaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\IzmeniBankaTelefonForm.resx">
       <DependentUpon>IzmeniBankaTelefonForm.cs</DependentUpon>
     </EmbeddedResource>

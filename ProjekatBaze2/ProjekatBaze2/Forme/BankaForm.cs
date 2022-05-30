@@ -69,6 +69,13 @@ namespace ProjekatBaze2.Forme
             forma.ShowDialog();
         }
 
+<<<<<<< HEAD
+        private void btnFilijaleForm_Click(object sender, EventArgs e)
+        {
+            if (listaBanke.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Izaberite banku cije podatke zelite da promenite!");
+=======
         private void btnFilijale_Click(object sender, EventArgs e)
         {
             Forme.FilijalaForm forma = new Forme.FilijalaForm();
@@ -80,10 +87,16 @@ namespace ProjekatBaze2.Forme
             if(listaBanke.SelectedItems.Count==0)
             {
                 MessageBox.Show("Izaberite banku cije dinarske racune zelite da vidite!");
+>>>>>>> 99a96c349ae4d26b7065742c05059c62abe438ad
                 return;
             }
             int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
             BankaBasic banka = DTOManager.vratiBanku(idBanke);
+<<<<<<< HEAD
+            FilijalaForm forma = new FilijalaForm(banka);
+            forma.ShowDialog();
+        }
+=======
             DinarskiRacuniForm forma = new DinarskiRacuniForm(banka);
             forma.ShowDialog();
         }
@@ -117,5 +130,6 @@ namespace ProjekatBaze2.Forme
             }
             
         }
+>>>>>>> 99a96c349ae4d26b7065742c05059c62abe438ad
     }
 }
