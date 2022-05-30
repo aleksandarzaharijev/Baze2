@@ -255,10 +255,8 @@ C:\Users\marko\source\repos\SBP II faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\De
 =======
 C:\Users\AleksandarZaharijev\source\repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.IzmeniBankaTelefonForm.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankaTelefoni.resources
-<<<<<<< HEAD
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajFilijaluForm.resources
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.FilijalaForm.resources
-=======
 >>>>>>> 0b1141640b456bd5eb8325fda413c41c41b4490c
 C:\Users\marko\source\repos\SBP II faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankaTelefoni.resources
 C:\Users\marko\source\repos\SBP II faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DinarskiRacuniForm.resources
@@ -316,3 +314,4 @@ C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\De
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.exe
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.pdb
 >>>>>>> 99a96c349ae4d26b7065742c05059c62abe438ad
+C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DinarskiRacuniForm.resources

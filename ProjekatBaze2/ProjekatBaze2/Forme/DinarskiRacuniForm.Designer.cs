@@ -41,10 +41,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnOvlascenaLica);
             this.groupBox1.Controls.Add(this.listaDinarskiRacuni);
-            this.groupBox1.Location = new System.Drawing.Point(27, 32);
+            this.groupBox1.Controls.Add(this.btnIzmeniRacun);
+            this.groupBox1.Controls.Add(this.btnDodajRacun);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(373, 370);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(776, 554);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dinarski racuni";
@@ -58,10 +64,11 @@
             this.listaDinarskiRacuni.FullRowSelect = true;
             this.listaDinarskiRacuni.GridLines = true;
             this.listaDinarskiRacuni.HideSelection = false;
-            this.listaDinarskiRacuni.Location = new System.Drawing.Point(6, 19);
+            this.listaDinarskiRacuni.Location = new System.Drawing.Point(8, 23);
+            this.listaDinarskiRacuni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listaDinarskiRacuni.MultiSelect = false;
             this.listaDinarskiRacuni.Name = "listaDinarskiRacuni";
-            this.listaDinarskiRacuni.Size = new System.Drawing.Size(359, 351);
+            this.listaDinarskiRacuni.Size = new System.Drawing.Size(477, 431);
             this.listaDinarskiRacuni.TabIndex = 0;
             this.listaDinarskiRacuni.UseCompatibleStateImageBehavior = false;
             this.listaDinarskiRacuni.View = System.Windows.Forms.View.Details;
@@ -85,9 +92,10 @@
             // btnDodajRacun
             // 
             this.btnDodajRacun.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDodajRacun.Location = new System.Drawing.Point(429, 51);
+            this.btnDodajRacun.Location = new System.Drawing.Point(534, 32);
+            this.btnDodajRacun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDodajRacun.Name = "btnDodajRacun";
-            this.btnDodajRacun.Size = new System.Drawing.Size(126, 27);
+            this.btnDodajRacun.Size = new System.Drawing.Size(168, 33);
             this.btnDodajRacun.TabIndex = 1;
             this.btnDodajRacun.Text = "Dodaj racun";
             this.btnDodajRacun.UseVisualStyleBackColor = false;
@@ -95,9 +103,10 @@
             // btnIzmeniRacun
             // 
             this.btnIzmeniRacun.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnIzmeniRacun.Location = new System.Drawing.Point(429, 101);
+            this.btnIzmeniRacun.Location = new System.Drawing.Point(534, 118);
+            this.btnIzmeniRacun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIzmeniRacun.Name = "btnIzmeniRacun";
-            this.btnIzmeniRacun.Size = new System.Drawing.Size(126, 27);
+            this.btnIzmeniRacun.Size = new System.Drawing.Size(168, 33);
             this.btnIzmeniRacun.TabIndex = 2;
             this.btnIzmeniRacun.Text = "Izmeni racun";
             this.btnIzmeniRacun.UseVisualStyleBackColor = false;
@@ -105,23 +114,22 @@
             // btnOvlascenaLica
             // 
             this.btnOvlascenaLica.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOvlascenaLica.Location = new System.Drawing.Point(429, 193);
+            this.btnOvlascenaLica.Location = new System.Drawing.Point(534, 198);
+            this.btnOvlascenaLica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOvlascenaLica.Name = "btnOvlascenaLica";
-            this.btnOvlascenaLica.Size = new System.Drawing.Size(126, 27);
+            this.btnOvlascenaLica.Size = new System.Drawing.Size(168, 33);
             this.btnOvlascenaLica.TabIndex = 3;
             this.btnOvlascenaLica.Text = "Ovlascena lica";
             this.btnOvlascenaLica.UseVisualStyleBackColor = false;
             // 
             // DinarskiRacuniForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(582, 450);
-            this.Controls.Add(this.btnOvlascenaLica);
-            this.Controls.Add(this.btnIzmeniRacun);
-            this.Controls.Add(this.btnDodajRacun);
+            this.ClientSize = new System.Drawing.Size(776, 554);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DinarskiRacuniForm";
             this.Text = "DinarskiRacuniForm";
             this.Load += new System.EventHandler(this.DinarskiRacuniForm_Load);
