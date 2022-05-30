@@ -42,10 +42,10 @@ namespace ProjekatBaze2.Forme
                     bankaTel.Broj_Telefona = txtDodajBankaBroj.Text;
 
 
-                    int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
+                    /*int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
                     BankaBasic banka = DTOManager.vratiBanku(idBanke);
                     banka.Banka_Telefoni.Add(bankaTel);
-                    DTOManager.dodajBrojTelefona(bankaTel);
+                    DTOManager.dodajBrojTelefona(bankaTel);*/
 
                 }
                 else
