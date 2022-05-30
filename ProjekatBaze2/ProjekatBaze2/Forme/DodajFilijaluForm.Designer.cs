@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtAdresa = new System.Windows.Forms.TextBox();
-            this.txtRadnoVreme = new System.Windows.Forms.TextBox();
-            this.txtBrojTelefona = new System.Windows.Forms.TextBox();
             this.btnDodajFilijaluKonacno = new System.Windows.Forms.Button();
+            this.txtBrojTelefona = new System.Windows.Forms.TextBox();
+            this.txtRadnoVreme = new System.Windows.Forms.TextBox();
+            this.txtAdresa = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,77 +50,88 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(302, 254);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(226, 206);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Podaci o filijali";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label1
+            // btnDodajFilijaluKonacno
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Adresa:";
+            this.btnDodajFilijaluKonacno.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDodajFilijaluKonacno.Location = new System.Drawing.Point(30, 169);
+            this.btnDodajFilijaluKonacno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajFilijaluKonacno.Name = "btnDodajFilijaluKonacno";
+            this.btnDodajFilijaluKonacno.Size = new System.Drawing.Size(162, 26);
+            this.btnDodajFilijaluKonacno.TabIndex = 6;
+            this.btnDodajFilijaluKonacno.Text = "Dodaj ";
+            this.btnDodajFilijaluKonacno.UseVisualStyleBackColor = false;
+            this.btnDodajFilijaluKonacno.Click += new System.EventHandler(this.btnDodajFilijaluKonacno_Click);
             // 
-            // label2
+            // txtBrojTelefona
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Radno vreme:";
+            this.txtBrojTelefona.Location = new System.Drawing.Point(117, 128);
+            this.txtBrojTelefona.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojTelefona.Name = "txtBrojTelefona";
+            this.txtBrojTelefona.Size = new System.Drawing.Size(76, 20);
+            this.txtBrojTelefona.TabIndex = 5;
+            // 
+            // txtRadnoVreme
+            // 
+            this.txtRadnoVreme.Location = new System.Drawing.Point(117, 80);
+            this.txtRadnoVreme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRadnoVreme.Name = "txtRadnoVreme";
+            this.txtRadnoVreme.Size = new System.Drawing.Size(76, 20);
+            this.txtRadnoVreme.TabIndex = 4;
+            // 
+            // txtAdresa
+            // 
+            this.txtAdresa.Location = new System.Drawing.Point(117, 34);
+            this.txtAdresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAdresa.Name = "txtAdresa";
+            this.txtAdresa.Size = new System.Drawing.Size(76, 20);
+            this.txtAdresa.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 164);
+            this.label3.Location = new System.Drawing.Point(28, 133);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 16);
+            this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Broj telefona: ";
             // 
-            // txtAdresa
+            // label2
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(156, 42);
-            this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.Size = new System.Drawing.Size(100, 22);
-            this.txtAdresa.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 85);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Radno vreme:";
             // 
-            // txtRadnoVreme
+            // label1
             // 
-            this.txtRadnoVreme.Location = new System.Drawing.Point(156, 99);
-            this.txtRadnoVreme.Name = "txtRadnoVreme";
-            this.txtRadnoVreme.Size = new System.Drawing.Size(100, 22);
-            this.txtRadnoVreme.TabIndex = 4;
-            // 
-            // txtBrojTelefona
-            // 
-            this.txtBrojTelefona.Location = new System.Drawing.Point(156, 158);
-            this.txtBrojTelefona.Name = "txtBrojTelefona";
-            this.txtBrojTelefona.Size = new System.Drawing.Size(100, 22);
-            this.txtBrojTelefona.TabIndex = 5;
-            // 
-            // btnDodajFilijaluKonacno
-            // 
-            this.btnDodajFilijaluKonacno.Location = new System.Drawing.Point(40, 208);
-            this.btnDodajFilijaluKonacno.Name = "btnDodajFilijaluKonacno";
-            this.btnDodajFilijaluKonacno.Size = new System.Drawing.Size(216, 23);
-            this.btnDodajFilijaluKonacno.TabIndex = 6;
-            this.btnDodajFilijaluKonacno.Text = "Dodaj ";
-            this.btnDodajFilijaluKonacno.UseVisualStyleBackColor = true;
-            this.btnDodajFilijaluKonacno.Click += new System.EventHandler(this.btnDodajFilijaluKonacno_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Adresa:";
             // 
             // DodajFilijaluForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(302, 254);
+            this.ClientSize = new System.Drawing.Size(226, 206);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DodajFilijaluForm";
             this.Text = "DodajFilijaluForm";
             this.Load += new System.EventHandler(this.DodajFilijaluForm_Load);
