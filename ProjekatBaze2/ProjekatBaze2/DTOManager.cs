@@ -115,7 +115,7 @@ namespace ProjekatBaze2
             }
             return bankaTelefoni;
         }
-        public static void dodajBrojTelefona(Banka_telefoniBasic b)
+        public static void dodajBrojTelefona(Banka_telefoniBasic b,int id)
         {
             try
             {
@@ -123,6 +123,8 @@ namespace ProjekatBaze2
 
                 Banka_telefoni bankaTelefon = new Banka_telefoni();
                 bankaTelefon.Broj_Telefona = b.Broj_Telefona;
+                Banka bank = s.Load<Banka>(id);
+                bankaTelefon.BrojBanke = bank;
 
                 s.SaveOrUpdate(bankaTelefon);
                 s.Flush();
@@ -144,8 +146,9 @@ namespace ProjekatBaze2
 
                 Banka_telefoni bankaTelefon = s.Load<Banka_telefoni>(b.id);
                 bankaTelefon.Broj_Telefona = b.Broj_Telefona;
+               
 
-                s.Update(bankaTelefon);
+                s.SaveOrUpdate(bankaTelefon);
                 s.Flush();
                 s.Close();
             }
@@ -155,23 +158,64 @@ namespace ProjekatBaze2
             }
             return b;
         }
+
         public static Banka_telefoniBasic vratiBrojTelefona(int id)
         {
-            Banka_telefoniBasic b = new Banka_telefoniBasic();
+            Banka_telefoniBasic tel = new Banka_telefoniBasic();
             try
             {
                 ISession s = DataLayer.GetSession();
-                Banka_telefoni bankaTelefon = s.Load<Banka_telefoni>(id);
-                b = new Banka_telefoniBasic(b.id,b.Broj_Telefona);
+
+                Banka_telefoni t = s.Load<Banka_telefoni>(id);
+                tel.Broj_Telefona = t.Broj_Telefona;
+                tel.id = t.Id;
+
+                s.Close();
+            }
+            catch(Exception e)
+            {
+               
+            }
+            return tel;
+        }
+        public static List<Banka_telefoniPregled> vratiBrojeveTelefona(int id)
+        {
+            List<Banka_telefoniPregled> brojevi = new List<Banka_telefoniPregled>();
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                IEnumerable<Banka_telefoni> telefoni = from o in s.Query<Banka_telefoni>()
+                                                       where o.BrojBanke.Id == id
+                                                       select o;
+                foreach (Banka_telefoni r in telefoni)
+                {
+                    brojevi.Add(new Banka_telefoniPregled(r.Id,r.Broj_Telefona));
+                }
                 s.Close();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
-            return b;
+            return brojevi;
         }
-        #endregion
+        public static void obrisiBroj (int id)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                Banka_telefoni tel = s.Load<Banka_telefoni>(id);
+                s.Delete(tel);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception e)
+
+            {
+
+            }
+        }
+            #endregion
     }
 
-}
+    }

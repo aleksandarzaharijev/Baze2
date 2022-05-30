@@ -34,7 +34,7 @@ namespace ProjekatBaze2
         public string WebAdresa;
         public string Ime;
         public string Email;
-
+        
         public virtual IList<Devizni_racunBasic> Devizni_Racuni { get; set; }
         public virtual IList<Dinarski_racunBasic> Dinarski_Racuni { get; set; }
         public virtual IList<Banka_telefoniBasic> Banka_Telefoni { get; set; }
@@ -84,24 +84,19 @@ namespace ProjekatBaze2
     }
     public class Banka_telefoniBasic
     {
-        public BankaBasic b;
+        public BankaBasic bankab;
         public int id;
 
         public string Broj_Telefona;
         public Banka_telefoniBasic() { }
 
-        public Banka_telefoniBasic(int idBanke, int id, string broj_Telefona)
+        public Banka_telefoniBasic( int id, string broj_Telefona)
         {
-            b.Id = idBanke;
+          
             this.id = id;
             broj_Telefona = Broj_Telefona;
         }
-        public Banka_telefoniBasic(int id, string broj_Telefona)
-
-        {
-            this.id = id;
-            Broj_Telefona = broj_Telefona;
-        }
+      
         public override string ToString()
         {
             return Broj_Telefona;

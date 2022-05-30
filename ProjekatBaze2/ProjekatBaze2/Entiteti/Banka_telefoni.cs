@@ -10,5 +10,7 @@ namespace ProjekatBaze2.Entiteti
     {
         public virtual int Id { get; set; }
         public virtual string Broj_Telefona { get; set; }
+
+        public virtual Banka BrojBanke { get; set; }
     }
 }

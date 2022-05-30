@@ -27,28 +27,70 @@ namespace ProjekatBaze2.Forme
 
         private void btnDodajBrojBanke_Click(object sender, EventArgs e)
         {
-            //Forme.DodajBankaTelefonForm forma = new Forme.DodajBankaTelefonForm(banka.Id);
-            //forma.ShowDialog();
-            popuniTabelu();
+            Forme.DodajBankaTelefoni forma = new Forme.DodajBankaTelefoni(banka);
+            forma.ShowDialog();
+            this.popuniTabelu();
         }
 
         public void popuniTabelu()
-        {
+        {   
+    
             listaBrojBanke.Items.Clear();
-            List<Banka_telefoniPregled> podaci = DTOManager.vratiSveBrojeveTelefona();
+            List<Banka_telefoniPregled> podaci = DTOManager.vratiBrojeveTelefona(banka.Id);
 
             foreach (Banka_telefoniPregled b in podaci)
             {
                 ListViewItem item = new ListViewItem(new String[] { b.id.ToString(), b.Broj_Telefona });
-                listaBrojBanke.Items.Add(item);
+                this.listaBrojBanke.Items.Add(item);
             }
-            listaBrojBanke.Refresh();
+            this.listaBrojBanke.Refresh();
         }
 
         private void BankaTelefoniForm_Load(object sender, EventArgs e)
         {
             this.Text = "BANKA " + banka.Ime.ToUpper();
             popuniTabelu();
+        }
+
+        private void listaBrojBanke_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbxKontaktTelefoni_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIzmeniBrojBanke_Click(object sender, EventArgs e)
+        {
+            if (listaBrojBanke.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Izaberite broj koji zelite da zamenite!");
+                return;
+            }
+
+            int idBroj = Int32.Parse(listaBrojBanke.SelectedItems[0].SubItems[0].Text);
+            Banka_telefoniBasic telefon = DTOManager.vratiBrojTelefona(idBroj);
+            IzmeniBankaTelefonForm forma = new IzmeniBankaTelefonForm(telefon);
+            forma.ShowDialog();
+            this.popuniTabelu();
+        }
+
+        private void btnObrisiBrojBanke_Click(object sender, EventArgs e)
+        {
+            string poruka = "Da li zelite da obrisete izabrano odeljenje?";
+            string title = "Pitanje";
+            MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
+            DialogResult result = MessageBox.Show(poruka, title, buttons);
+            int idBroj = Int32.Parse(listaBrojBanke.SelectedItems[0].SubItems[0].Text);
+            if (result == DialogResult.OK)
+            {
+                DTOManager.obrisiBroj(idBroj);
+                MessageBox.Show("Uspesno obrisan broj");
+                this.popuniTabelu();
+
+            }
         }
     }
 }

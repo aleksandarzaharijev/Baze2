@@ -13,6 +13,7 @@ namespace ProjekatBaze2.Forme
     public partial class IzmeniBankaTelefonForm : Form
     {
         public Banka_telefoniBasic telefon;
+        public BankaBasic banka;
         public IzmeniBankaTelefonForm()
         {
             InitializeComponent();
@@ -41,24 +42,47 @@ namespace ProjekatBaze2.Forme
 
         private void IzmeniBankaTelefonForm_Load(object sender, EventArgs e)
         {
-
+            popuni();
         }
 
         private void btnIzmeniBrojBanke_Click(object sender, EventArgs e)
         {
-            string poruka = "Da li zelite da izvrsite izmene banke?";
-            string title = "Pitanje";
-            MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
-            DialogResult result = MessageBox.Show(poruka, title, buttons);
-            if (result == DialogResult.OK)
+            telefon.Broj_Telefona = txtIzmenaTelefona.Text;
+            string brojevi = telefon.Broj_Telefona;
+            int element = telefon.Broj_Telefona.Count();
+            if (element == 11 || element == 12)
             {
-                this.telefon.Broj_Telefona = txtIzmenaTelefona.Text;
-                DTOManager.izmeniBrojTelefona(this.telefon);
-                
+                if (brojevi[0] != '0' || brojevi[0] == ' ')
+                {
+                    MessageBox.Show("Morate uneti broj koji pocinje nulom");
+                }
+                else
+                {
+                    int i = 1;
+                    int flag = 0;
+                    while (flag == 0 && i < 3)
+                    {
+                        if (brojevi[i] == ' ')
+                            flag = 1;
+                        i++;
+                    }
+                    if (flag == 0)
+                    {
+                        DTOManager.izmeniBrojTelefona(telefon);
+                        MessageBox.Show("Uspešna izmena broja telefona");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nepravilan format");
+                    }
+                }
+
             }
             else
             {
-
+                MessageBox.Show("Unesite ispravan broj telefona u zadatim formatima:\n xxxx xxx xxx\n xxx xxx xxx\n xxx xxxx xxx  ");
+                popuni();
             }
         }
     }
