@@ -315,6 +315,13 @@ C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\De
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.pdb
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.IzmeniDinarskiRacun.resources
 >>>>>>> 99a96c349ae4d26b7065742c05059c62abe438ad
+<<<<<<< HEAD
+C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DinarskiRacuniForm.resources
+=======
 >>>>>>> 1a49e6e9e13f98fc619044d7da82e757f934b5ae
+<<<<<<< HEAD
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajFilijaluForm.resources
 C:\Users\marko\source\repos\SBP_II_faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.FilijalaForm.resources
+=======
+>>>>>>> 104a0d8b1b9588855c5c841e2e6986ebd998993e
+>>>>>>> aaafa38919db291a6289efe1878b700b98b2694f
