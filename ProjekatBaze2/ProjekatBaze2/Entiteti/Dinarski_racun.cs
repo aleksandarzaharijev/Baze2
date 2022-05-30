@@ -20,6 +20,8 @@ namespace ProjekatBaze2.Entiteti
 
         public virtual IList<Kreditna_kartica> Kreditne_kartice { get; set; }
 
+        public virtual Banka RacunBanka { get; set; }
+
         //public virtual IList>
 
         public Dinarski_racun()

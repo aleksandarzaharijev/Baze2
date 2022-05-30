@@ -16,5 +16,23 @@ namespace ProjekatBaze2.Forme
         {
             InitializeComponent();
         }
+
+        private void DinarskiRacuniForm_Load(object sender, EventArgs e)
+        {
+            popuniTabelu();
+        }
+
+        public void popuniTabelu()
+        {
+            listaDinarskiRacuni.Items.Clear();
+            List<Dinarski_racunPregled> podaci = DTOManager.vratiSveDinarskeRacune();
+
+            foreach(Dinarski_racunPregled d in podaci)
+            {
+                ListViewItem item = new ListViewItem(new String[] {d.Id.ToString(),d.DatumOtvaranja.ToString(),d.Saldo.ToString()});
+                listaDinarskiRacuni.Items.Add(item);
+            }
+            listaDinarskiRacuni.Refresh();
+        }
     }
 }

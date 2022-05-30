@@ -68,5 +68,17 @@ namespace ProjekatBaze2.Forme
             BankaTelefoniForm forma = new BankaTelefoniForm(banka);
             forma.ShowDialog();
         }
+
+        private void btnFilijale_Click(object sender, EventArgs e)
+        {
+            Forme.FilijalaForm forma = new Forme.FilijalaForm();
+            forma.ShowDialog();
+        }
+
+        private void btnDinarskiRacuni_Click(object sender, EventArgs e)
+        {
+            Forme.DinarskiRacuniForm forma = new Forme.DinarskiRacuniForm();
+            forma.ShowDialog();
+        }
     }
 }

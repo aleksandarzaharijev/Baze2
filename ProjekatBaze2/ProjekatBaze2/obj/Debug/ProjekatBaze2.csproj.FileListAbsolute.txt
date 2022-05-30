@@ -257,3 +257,4 @@ C:\Users\AleksandarZaharijev\source\repos\aleksandarzaharijev\Baze2\ProjekatBaze
 C:\Users\AleksandarZaharijev\Source\Repos\aleksandarzaharijev\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankaTelefoni.resources
 >>>>>>> 0b1141640b456bd5eb8325fda413c41c41b4490c
 C:\Users\marko\source\repos\SBP II faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DodajBankaTelefoni.resources
+C:\Users\marko\source\repos\SBP II faza\Baze2\ProjekatBaze2\ProjekatBaze2\obj\Debug\ProjekatBaze2.Forme.DinarskiRacuniForm.resources

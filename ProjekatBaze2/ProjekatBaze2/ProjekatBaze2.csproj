@@ -295,6 +295,9 @@
     <EmbeddedResource Include="Forme\BankaTelefoniForm.resx">
       <DependentUpon>BankaTelefoniForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DinarskiRacuniForm.resx">
+      <DependentUpon>DinarskiRacuniForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajBankaTelefoni.resx">
       <DependentUpon>DodajBankaTelefoni.cs</DependentUpon>
     </EmbeddedResource>
