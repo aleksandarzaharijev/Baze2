@@ -15,6 +15,8 @@ namespace ProjekatBaze2.Mapiranja
             Id(x => x.Id, "IDDROL").GeneratedBy.TriggerIdentity();
 
             Map(x => x.Imena_Lica, "IME_LICA");
+
+            References(x => x.Devizni_Racun).Column("BROJRACUNA").LazyLoad();
         }
     }
 }

@@ -15,6 +15,8 @@ namespace ProjekatBaze2.Mapiranja
             Id(x => x.Id, "IDKLIJENTKOMENTARI").GeneratedBy.TriggerIdentity();
 
             Map(x => x.Dodatni_komentar, "DODATNIKOMENTARI");
+
+            References(x => x.klijent).Column("JEDIDENTFBROJ").LazyLoad();
         }
     }
 }
