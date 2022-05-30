@@ -33,6 +33,9 @@
             this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DatumOtvaranja = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Saldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnDodajRacun = new System.Windows.Forms.Button();
+            this.btnIzmeniRacun = new System.Windows.Forms.Button();
+            this.btnOvlascenaLica = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,18 +55,22 @@
             this.Id,
             this.DatumOtvaranja,
             this.Saldo});
+            this.listaDinarskiRacuni.FullRowSelect = true;
+            this.listaDinarskiRacuni.GridLines = true;
             this.listaDinarskiRacuni.HideSelection = false;
             this.listaDinarskiRacuni.Location = new System.Drawing.Point(6, 19);
+            this.listaDinarskiRacuni.MultiSelect = false;
             this.listaDinarskiRacuni.Name = "listaDinarskiRacuni";
             this.listaDinarskiRacuni.Size = new System.Drawing.Size(359, 351);
             this.listaDinarskiRacuni.TabIndex = 0;
             this.listaDinarskiRacuni.UseCompatibleStateImageBehavior = false;
             this.listaDinarskiRacuni.View = System.Windows.Forms.View.Details;
+            this.listaDinarskiRacuni.SelectedIndexChanged += new System.EventHandler(this.listaDinarskiRacuni_SelectedIndexChanged);
             // 
             // Id
             // 
-            this.Id.Text = "Id";
-            this.Id.Width = 83;
+            this.Id.Text = "Broj računa";
+            this.Id.Width = 118;
             // 
             // DatumOtvaranja
             // 
@@ -73,13 +80,47 @@
             // Saldo
             // 
             this.Saldo.Text = "Saldo";
-            this.Saldo.Width = 72;
+            this.Saldo.Width = 90;
+            // 
+            // btnDodajRacun
+            // 
+            this.btnDodajRacun.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDodajRacun.Location = new System.Drawing.Point(429, 51);
+            this.btnDodajRacun.Name = "btnDodajRacun";
+            this.btnDodajRacun.Size = new System.Drawing.Size(126, 27);
+            this.btnDodajRacun.TabIndex = 1;
+            this.btnDodajRacun.Text = "Dodaj racun";
+            this.btnDodajRacun.UseVisualStyleBackColor = false;
+            // 
+            // btnIzmeniRacun
+            // 
+            this.btnIzmeniRacun.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnIzmeniRacun.Location = new System.Drawing.Point(429, 101);
+            this.btnIzmeniRacun.Name = "btnIzmeniRacun";
+            this.btnIzmeniRacun.Size = new System.Drawing.Size(126, 27);
+            this.btnIzmeniRacun.TabIndex = 2;
+            this.btnIzmeniRacun.Text = "Izmeni racun";
+            this.btnIzmeniRacun.UseVisualStyleBackColor = false;
+            // 
+            // btnOvlascenaLica
+            // 
+            this.btnOvlascenaLica.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnOvlascenaLica.Location = new System.Drawing.Point(429, 193);
+            this.btnOvlascenaLica.Name = "btnOvlascenaLica";
+            this.btnOvlascenaLica.Size = new System.Drawing.Size(126, 27);
+            this.btnOvlascenaLica.TabIndex = 3;
+            this.btnOvlascenaLica.Text = "Ovlascena lica";
+            this.btnOvlascenaLica.UseVisualStyleBackColor = false;
             // 
             // DinarskiRacuniForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(582, 450);
+            this.Controls.Add(this.btnOvlascenaLica);
+            this.Controls.Add(this.btnIzmeniRacun);
+            this.Controls.Add(this.btnDodajRacun);
             this.Controls.Add(this.groupBox1);
             this.Name = "DinarskiRacuniForm";
             this.Text = "DinarskiRacuniForm";
@@ -96,5 +137,8 @@
         private System.Windows.Forms.ColumnHeader Id;
         private System.Windows.Forms.ColumnHeader DatumOtvaranja;
         private System.Windows.Forms.ColumnHeader Saldo;
+        private System.Windows.Forms.Button btnDodajRacun;
+        private System.Windows.Forms.Button btnIzmeniRacun;
+        private System.Windows.Forms.Button btnOvlascenaLica;
     }
 }

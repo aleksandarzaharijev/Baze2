@@ -19,16 +19,6 @@ namespace ProjekatBaze2.Forme
             banka = new BankaBasic();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DodajBankuForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDodajBankuKonacno_Click(object sender, EventArgs e)
         {
             string poruka = "Da li zelite da dodate novu banku u sistem?";
@@ -52,5 +42,5 @@ namespace ProjekatBaze2.Forme
 
             }
     }
-}
+    }
 }

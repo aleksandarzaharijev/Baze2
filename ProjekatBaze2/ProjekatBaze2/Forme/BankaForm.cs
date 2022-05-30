@@ -77,8 +77,45 @@ namespace ProjekatBaze2.Forme
 
         private void btnDinarskiRacuni_Click(object sender, EventArgs e)
         {
-            Forme.DinarskiRacuniForm forma = new Forme.DinarskiRacuniForm();
+            if(listaBanke.SelectedItems.Count==0)
+            {
+                MessageBox.Show("Izaberite banku cije dinarske racune zelite da vidite!");
+                return;
+            }
+            int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
+            BankaBasic banka = DTOManager.vratiBanku(idBanke);
+            DinarskiRacuniForm forma = new DinarskiRacuniForm(banka);
             forma.ShowDialog();
+        }
+
+        private void btnKlijenti_Click(object sender, EventArgs e)
+        {
+            if (listaBanke.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Izaberite banku cije klijente racune zelite da vidite!");
+                return;
+            }
+            if(!rbtnFizickaLica.Checked && !rbtnPravnaLica.Checked)
+            {
+                MessageBox.Show("Izaberite tip klijenta cije racune zelite da vidite!");
+                return;
+            }
+
+            if(rbtnFizickaLica.Checked)
+            {
+                int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
+                BankaBasic banka = DTOManager.vratiBanku(idBanke);
+                FizickaLicaForm forma = new FizickaLicaForm(banka);
+                forma.ShowDialog();
+            }
+            else 
+            {
+                int idBanke = Int32.Parse(listaBanke.SelectedItems[0].SubItems[0].Text);
+                BankaBasic banka = DTOManager.vratiBanku(idBanke);
+                PravnaLicaForm forma = new PravnaLicaForm(banka);
+                forma.ShowDialog();
+            }
+            
         }
     }
 }

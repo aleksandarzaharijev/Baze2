@@ -43,6 +43,8 @@
             this.btnFilijale = new System.Windows.Forms.Button();
             this.btnDinarskiRacuni = new System.Windows.Forms.Button();
             this.btnDevizniRacuni = new System.Windows.Forms.Button();
+            this.rbtnPravnaLica = new System.Windows.Forms.RadioButton();
+            this.rbtnFizickaLica = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,6 +108,7 @@
             this.listaBanke.HideSelection = false;
             this.listaBanke.Location = new System.Drawing.Point(2, 18);
             this.listaBanke.Margin = new System.Windows.Forms.Padding(2);
+            this.listaBanke.MultiSelect = false;
             this.listaBanke.Name = "listaBanke";
             this.listaBanke.Size = new System.Drawing.Size(574, 503);
             this.listaBanke.TabIndex = 4;
@@ -143,13 +146,14 @@
             // 
             // btnKlijenti
             // 
-            this.btnKlijenti.Location = new System.Drawing.Point(614, 222);
+            this.btnKlijenti.Location = new System.Drawing.Point(614, 294);
             this.btnKlijenti.Margin = new System.Windows.Forms.Padding(2);
             this.btnKlijenti.Name = "btnKlijenti";
             this.btnKlijenti.Size = new System.Drawing.Size(181, 33);
             this.btnKlijenti.TabIndex = 4;
             this.btnKlijenti.Text = "Klijenti";
             this.btnKlijenti.UseVisualStyleBackColor = true;
+            this.btnKlijenti.Click += new System.EventHandler(this.btnKlijenti_Click);
             // 
             // btnBankaTelefoni
             // 
@@ -164,7 +168,7 @@
             // 
             // btnFilijale
             // 
-            this.btnFilijale.Location = new System.Drawing.Point(614, 282);
+            this.btnFilijale.Location = new System.Drawing.Point(614, 229);
             this.btnFilijale.Name = "btnFilijale";
             this.btnFilijale.Size = new System.Drawing.Size(181, 30);
             this.btnFilijale.TabIndex = 6;
@@ -174,7 +178,7 @@
             // 
             // btnDinarskiRacuni
             // 
-            this.btnDinarskiRacuni.Location = new System.Drawing.Point(614, 343);
+            this.btnDinarskiRacuni.Location = new System.Drawing.Point(614, 433);
             this.btnDinarskiRacuni.Name = "btnDinarskiRacuni";
             this.btnDinarskiRacuni.Size = new System.Drawing.Size(181, 27);
             this.btnDinarskiRacuni.TabIndex = 7;
@@ -184,12 +188,34 @@
             // 
             // btnDevizniRacuni
             // 
-            this.btnDevizniRacuni.Location = new System.Drawing.Point(614, 395);
+            this.btnDevizniRacuni.Location = new System.Drawing.Point(613, 479);
             this.btnDevizniRacuni.Name = "btnDevizniRacuni";
             this.btnDevizniRacuni.Size = new System.Drawing.Size(181, 27);
             this.btnDevizniRacuni.TabIndex = 8;
             this.btnDevizniRacuni.Text = "Devizni racuni";
             this.btnDevizniRacuni.UseVisualStyleBackColor = true;
+            // 
+            // rbtnPravnaLica
+            // 
+            this.rbtnPravnaLica.AutoSize = true;
+            this.rbtnPravnaLica.Location = new System.Drawing.Point(624, 349);
+            this.rbtnPravnaLica.Name = "rbtnPravnaLica";
+            this.rbtnPravnaLica.Size = new System.Drawing.Size(78, 17);
+            this.rbtnPravnaLica.TabIndex = 9;
+            this.rbtnPravnaLica.TabStop = true;
+            this.rbtnPravnaLica.Text = "Pravna lica";
+            this.rbtnPravnaLica.UseVisualStyleBackColor = true;
+            // 
+            // rbtnFizickaLica
+            // 
+            this.rbtnFizickaLica.AutoSize = true;
+            this.rbtnFizickaLica.Location = new System.Drawing.Point(624, 372);
+            this.rbtnFizickaLica.Name = "rbtnFizickaLica";
+            this.rbtnFizickaLica.Size = new System.Drawing.Size(77, 17);
+            this.rbtnFizickaLica.TabIndex = 10;
+            this.rbtnFizickaLica.TabStop = true;
+            this.rbtnFizickaLica.Text = "Fizicka lica";
+            this.rbtnFizickaLica.UseVisualStyleBackColor = true;
             // 
             // BankaForm
             // 
@@ -197,6 +223,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(804, 555);
+            this.Controls.Add(this.rbtnFizickaLica);
+            this.Controls.Add(this.rbtnPravnaLica);
             this.Controls.Add(this.btnDevizniRacuni);
             this.Controls.Add(this.btnDinarskiRacuni);
             this.Controls.Add(this.btnFilijale);
@@ -212,6 +240,7 @@
             this.Load += new System.EventHandler(this.BankaForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -232,5 +261,7 @@
         private System.Windows.Forms.Button btnFilijale;
         private System.Windows.Forms.Button btnDinarskiRacuni;
         private System.Windows.Forms.Button btnDevizniRacuni;
+        private System.Windows.Forms.RadioButton rbtnPravnaLica;
+        private System.Windows.Forms.RadioButton rbtnFizickaLica;
     }
 }

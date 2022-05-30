@@ -8,7 +8,7 @@ namespace ProjekatBaze2.Entiteti
 {
     public class Dinarski_racun
     {
-        public virtual int Id { get; set; }
+        public virtual long Id { get; set; }
 
         public virtual DateTime DatumOtvaranja { get; set; }
 
